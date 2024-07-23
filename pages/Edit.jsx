@@ -1,7 +1,11 @@
 import React from "react";
-
+import EditCar from "../Components/EditCar";
 function Edit() {
-  return <div>Edit</div>;
+  return (
+    <div>
+      <EditCar />
+    </div>
+  );
 }
 
 export default Edit;
