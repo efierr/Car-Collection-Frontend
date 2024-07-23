@@ -17,6 +17,9 @@ function App() {
         <main>
           <Routes>
             <Route path="/cars" element={<Index />} />
+            <Route path="/cars/:id" element={<Show />} />
+            <Route path="/cars/:id/edit" element={<Edit />} />
+            <Route path="*" element={<FourOrFour />} />
           </Routes>
         </main>
       </Router>
