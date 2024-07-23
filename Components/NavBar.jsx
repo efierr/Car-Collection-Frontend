@@ -1,7 +1,16 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function NavBar() {
-  return <div> NavBar</div>;
+const NavigationBar = () => {
+  return (
+    <header className="">
+      <div className="jumbotron header">
+      <h1 className='inline-block'>Cars Collection</h1>
+      <Link className='inline-block float-right btn btn-default btn-outline-primary' to="/newcar">New Car</Link>
+      </div>
+    </header>
+  )
+
 }
 
-export default NavBar;
+export default NavigationBar;
