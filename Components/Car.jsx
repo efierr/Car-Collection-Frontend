@@ -1,7 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Car() {
-  return <div>Car</div>;
-}
-
+const Car = ({ car }) => {
+  return (
+    <div>
+      <Link to={`/cars`}>
+        {car.id} {car.make}
+      </Link>
+    </div>
+  );
+};
 export default Car;
