@@ -44,19 +44,10 @@ function EditCar() {
         "Content-Type": "application/json",
       },
     })
-      .then((response) => {
-        if (response.ok) {
-          console.log("Car updated successfully");
-          navigate("/cars");
-        } else {
-          return response.json().then((data) => {
-            throw new Error(data.message || "Failed to update car");
-          });
-        }
+      .then(() => {
+        navigate("/cars");
       })
-      .catch((error) => {
-        console.error("Error updating car:", error);
-      });
+      .catch((error) => console.error(error));
   };
 
   const handleSubmit = (event) => {
