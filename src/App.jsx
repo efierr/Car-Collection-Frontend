@@ -8,6 +8,8 @@ import Index from "../pages/Index";
 import Show from "../pages/Show";
 import New from "../pages/New";
 import NavBar from "../Components/NavBar";
+import EditCar from "../Components/EditCar";
+import NewCar from "../Components/NewCar";
 
 function App() {
   return (
@@ -18,8 +20,8 @@ function App() {
           <Routes>
             <Route path="/cars" element={<Index />} />
             <Route path="/cars/:id" element={<Show />} />
-            <Route path="/cars/:id/edit" element={<Edit />} />
-            <Route path="*" element={<FourOrFour />} />
+            <Route path="/cars/:id/edit" element={<EditCar />} />
+            <Route path="/cars/New" element={<New />} />
           </Routes>
         </main>
       </Router>

@@ -1,7 +1,12 @@
 import React from "react";
+import NewCar from "../Components/NewCar";
 
 function New() {
-  return <div>New</div>;
+  return (
+    <div>
+      <NewCar />
+    </div>
+  );
 }
 
 export default New;
