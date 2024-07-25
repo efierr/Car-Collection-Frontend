@@ -1,0 +1,10 @@
+.car-page {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }

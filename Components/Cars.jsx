@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Car from "./Car";
-
+import "../css/Cars.css";
 const API = import.meta.env.VITE_API_URL;
 
 const Cars = () => {
@@ -19,11 +19,13 @@ const Cars = () => {
   }, []);
 
   return (
-    <div>
+    <div className="car-page">
       <h1>Your Car Collection</h1>
-      {cars.map((car) => (
-        <Car key={car.id} car={car} />
-      ))}
+      <section className="cars">
+        {cars.map((car) => (
+          <Car key={car.id} car={car} />
+        ))}
+      </section>
     </div>
   );
 };
