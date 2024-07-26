@@ -1,0 +1,17 @@
+.header {
+    background-color: rgb(31, 41, 39);
+    color: rgb(255, 89, 0)
+  }
+
+  .float-right{
+    float: right;
+  }
+  
+  .inline-block {
+    display: inline-block;
+    padding: 15px;
+  }
+
+  .new-car{
+    color: rgb(255, 89, 0)
+  }
