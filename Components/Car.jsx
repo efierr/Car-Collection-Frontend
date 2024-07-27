@@ -5,7 +5,7 @@ const Car = ({ car }) => {
   return (
     <div>
       <Link to={`/cars/${car.id}`}>
-        {car.id} {car.make}
+        {car.id} {car.make} {car.img_url}
       </Link>
     </div>
   );

@@ -48,6 +48,7 @@ function CarDetails() {
       <p>{carsDetails.color}</p>
       <p>{carsDetails.price}</p>
       <p>{carsDetails.is_favorite}</p>
+      <p>{carsDetails.img_url}</p>
 
       <Link to={`/cars/${id}/edit`}>
         <button>Edit</button>
