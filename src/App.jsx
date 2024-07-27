@@ -9,7 +9,6 @@ import Show from "../pages/Show";
 import New from "../pages/New";
 import NavBar from "../Components/NavBar";
 import EditCar from "../Components/EditCar";
-import NewCar from "../Components/NewCar";
 
 function App() {
   return (
@@ -23,6 +22,7 @@ function App() {
             <Route path="/cars/:id" element={<Show />} />
             <Route path="/cars/:id/edit" element={<EditCar />} />
             <Route path="/cars/New" element={<New />} />
+            <Route path="*" element={<FourOrFour />} />
           </Routes>
         </main>
       </Router>
