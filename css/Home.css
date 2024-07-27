@@ -6,13 +6,18 @@
     width: auto;
     height: 100vh;
     background-image: url("../carImages/carcollectionhomepage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 .home-header {
+    font-family: sans-serif;
     text-align: center;
     margin-bottom: 30px;
 }
 
 .box {
+    margin-top: 20%;
     border: white;
     color: white;
     width:65%;

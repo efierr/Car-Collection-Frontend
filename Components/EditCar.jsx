@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 const API = import.meta.env.VITE_API_URL;
-
+import "../css/EditCar.css";
 function EditCar() {
   const [carDetails, setCarDetails] = useState({
     make: "",
@@ -55,8 +55,8 @@ function EditCar() {
     updateCar();
   };
   return (
-    <div>
-      <h1>Car Edit Form</h1>
+    <div className="edit-car-container">
+      <h1 className="car-edit-header">Car Edit Form</h1>
       <form className="Form-Container" onSubmit={handleSubmit}>
         <label htmlFor="make">Make:</label>
         <input

@@ -1,0 +1,18 @@
+.four-o-four-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+}
+
+.burning-car-gif {
+    width: 40%;
+    height: 40%;
+}
+
+.four-o-four-header {
+color: white;
+text-align: center;
+}

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 const API = import.meta.env.VITE_API_URL;
-import '../css/NavBar.css'
-
+import "../css/NavBar.css";
+import "../css/NewCar.css";
 
 function NewCar() {
   const [newCarDetails, setNewCarDetails] = useState({
@@ -49,9 +49,9 @@ function NewCar() {
     });
   };
   return (
-    <div>
-      <h1>Car New Form</h1>
-      <form className="Form-Container" onSubmit={handleSubmit}>
+    <div className="new-car-container">
+      <h1 className="new-car-header">Car New Form</h1>
+      <form className="new-car-form-container" onSubmit={handleSubmit}>
         <label htmlFor="make">Make:</label>
         <input
           id="make"
