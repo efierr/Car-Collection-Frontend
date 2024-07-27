@@ -20,7 +20,7 @@ const Cars = () => {
 
   return (
     <div className="car-page">
-      <h1>Your Car Collection</h1>
+      <h1 className="car-collection">Your Car Collection</h1>
       <section className="cars">
         {cars.map((car) => (
           <Car key={car.id} car={car} />
