@@ -110,7 +110,7 @@ function EditCar() {
         <input
           id="img_url"
           type="text"
-          checked={carDetails.img_url || false}
+          value={carDetails.img_url}
           onChange={handleTextChange}
         />
         <button type="submit">Submit</button>

@@ -54,7 +54,7 @@ function CarDetails() {
         <p>Year:{carsDetails.year}</p>
         <p>Color:{carsDetails.color}</p>
         <p>Price: ${carsDetails.price}</p>
-        <p>{carsDetails.is_favorite}</p>
+
         <div className="button-box">
           <Link to={`/cars/${id}/edit`}>
             <button id="edit-delete-button">Edit</button>

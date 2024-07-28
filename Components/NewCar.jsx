@@ -47,6 +47,7 @@ function NewCar() {
       color: "",
       price: 0,
       is_favorite: false,
+      img_url: "",
     });
   };
   return (
@@ -104,7 +105,7 @@ function NewCar() {
         <input
           id="img_url"
           type="text"
-          checked={newCarDetails.img_url || false}
+          value={newCarDetails.img_url || ""}
           onChange={handleTextChange}
         />
         <button type="submit">Submit</button>
