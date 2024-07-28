@@ -1,10 +1,20 @@
 .car-page {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
   
   .cars {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 100px;
+    text-align: center;
+  }
+  
+
+  .car-collection {
+    margin-bottom:70px;
   }

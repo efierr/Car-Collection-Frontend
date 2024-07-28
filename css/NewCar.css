@@ -1,0 +1,28 @@
+.new-car-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../carImages/How\ Does\ A\ Car\ Dealership\ Calculate\ A\ Potential\ Trade-In\ Offer.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .new-car-form-container {
+    flex-direction: column;
+    display: flex;
+    width:80%;
+    height: 55%;
+    margin-bottom: 15%;
+    background-color: rgba(4, 4, 4, 0.3);
+}
+.car-edit-header {
+color: white;
+font-size: 3rem;
+}
+label {
+    color: white;
+}
+  

@@ -4,7 +4,7 @@
   }
 
   .float-right{
-    float: right;
+    float:inline-end
   }
   
   .inline-block {
@@ -14,4 +14,10 @@
 
   .new-car{
     color: rgb(255, 89, 0)
+  }
+
+
+  h1 a{
+text-decoration: none;
+    color: inherit;
   }
