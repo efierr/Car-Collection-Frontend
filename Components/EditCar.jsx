@@ -11,6 +11,7 @@ function EditCar() {
     color: "",
     price: 0,
     is_favorite: false,
+    img_url: "",
   });
   let { id } = useParams();
   let navigate = useNavigate();
@@ -103,6 +104,13 @@ function EditCar() {
           id="is_favorite"
           type="checkbox"
           checked={carDetails.is_favorite || false}
+          onChange={handleTextChange}
+        />
+        <label htmlFor="img_url">Image URL</label>
+        <input
+          id="img_url"
+          type="text"
+          checked={carDetails.img_url || false}
           onChange={handleTextChange}
         />
         <button type="submit">Submit</button>

@@ -1,0 +1,11 @@
+.cars-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}

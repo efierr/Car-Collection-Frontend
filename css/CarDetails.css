@@ -22,7 +22,7 @@
     margin-bottom: 10px;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
 }
 .car-details-header {
     text-align: center;
@@ -30,10 +30,12 @@
 
 p {
     color: white;
-    border-radius: 50px;
+    border-radius: 0px;
     border: white 5px solid;
     margin-top: 0px;
     text-align: center;
+    width:100%;
+
 }
 
 
@@ -43,4 +45,10 @@ p {
     margin: auto;
     justify-content: center;
     align-items: center;
+}
+
+.car-detail-image {
+    width:300px;
+    margin-left: 380px;
+    margin-bottom: 49px;
 }

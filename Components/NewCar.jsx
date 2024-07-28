@@ -12,6 +12,7 @@ function NewCar() {
     color: "",
     price: 0,
     is_favorite: false,
+    img_url: "",
   });
 
   let navigate = useNavigate();
@@ -97,6 +98,13 @@ function NewCar() {
           id="is_favorite"
           type="checkbox"
           checked={newCarDetails.is_favorite || false}
+          onChange={handleTextChange}
+        />
+        <label htmlFor="img_url">Image URL</label>
+        <input
+          id="img_url"
+          type="text"
+          checked={newCarDetails.img_url || false}
           onChange={handleTextChange}
         />
         <button type="submit">Submit</button>

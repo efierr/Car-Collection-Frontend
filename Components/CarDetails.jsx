@@ -12,6 +12,7 @@ function CarDetails() {
     color: "",
     price: 0,
     is_favorite: false,
+    img_url: "",
   });
   let { id } = useParams();
   let navigate = useNavigate();
@@ -43,11 +44,16 @@ function CarDetails() {
     <div className="car-details-page-container">
       <div className="box">
         <h1 className="car-details-header">Car Details</h1>
-        <p>{carsDetails.make}</p>
-        <p>{carsDetails.model}</p>
-        <p>{carsDetails.year}</p>
-        <p>{carsDetails.color}</p>
-        <p>{carsDetails.price}</p>
+        <img
+          className="car-detail-image"
+          src={carsDetails.img_url}
+          alt={carsDetails.make}
+        />
+        <p>Make:{carsDetails.make}</p>
+        <p>Model:{carsDetails.model}</p>
+        <p>Year:{carsDetails.year}</p>
+        <p>Color:{carsDetails.color}</p>
+        <p>Price: ${carsDetails.price}</p>
         <p>{carsDetails.is_favorite}</p>
         <div className="button-box">
           <Link to={`/cars/${id}/edit`}>
